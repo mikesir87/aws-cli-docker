@@ -7,5 +7,7 @@ RUN \
 	apk --purge -v del py-pip && \
 	rm /var/cache/apk/*
 
+COPY cli-version /
+
 WORKDIR /aws
 
