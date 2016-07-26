@@ -2,7 +2,8 @@
 
 ## Supported tags and Dockerfiles
 
-- `1.10.49` `latest` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.10.49/Dockerfile))
+- `1.10.50` `latest` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.10.50/Dockerfile))
+- `1.10.49` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.10.49/Dockerfile))
 
 
 This image provides the AWS CLI and a few other tools, including jq.
