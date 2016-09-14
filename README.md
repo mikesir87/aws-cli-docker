@@ -24,7 +24,7 @@ I have an IFTT recipe written to notify me of new releases of the AWS CLI, so sh
 ## Usage
 
 ```
-docker run --rm -e AWS_ACESS_KEY_ID=my-key-id -e AWS_SECRET_ACCESS_KEY=my-secret-access-key -v $(pwd):/aws mikesir87/aws-cli aws ecs register-task-definition --cli-input-json file://aws/task-definition.json
+docker run --rm -e AWS_ACCESS_KEY_ID=my-key-id -e AWS_SECRET_ACCESS_KEY=my-secret-access-key -v $(pwd):/aws mikesir87/aws-cli aws ecs register-task-definition --cli-input-json file://aws/task-definition.json
 ```
 
 The sample above uses environment variables to set the access and secret keys and invokes the ECS service to register a task definition.
