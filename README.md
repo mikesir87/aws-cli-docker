@@ -2,7 +2,8 @@
 
 ## Supported tags and Dockerfiles
 
-- `1.11.48` `latest` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.11.48/Dockerfile))
+- `1.11.49` `latest` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.11.49/Dockerfile)
+- `1.11.48` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.11.48/Dockerfile))
 - `1.11.46` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.11.46/Dockerfile))
 - `1.11.45` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.11.45/Dockerfile))
 - `1.11.43` ([Dockerfile](https://github.com/mikesir87/aws-cli-docker/blob/1.11.43/Dockerfile))
