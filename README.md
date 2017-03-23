@@ -1,5 +1,9 @@
 # AWS CLI Docker Image
 
+![Docker Stars](https://img.shields.io/docker/stars/mikesir87/aws-cli.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/mikesir87/aws-cli.svg)
+![Docker Automated Builds](http://img.shields.io/docker/automated/mikesir87/aws-cli.svg)
+
 ## Supported tags and Dockerfiles
 
 [1.11.65/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.11.65/Dockerfile) |
