@@ -64,12 +64,33 @@ This image provides the AWS CLI and a few other tools, including jq.
 
 I have an IFTT recipe written to notify me of new releases of the AWS CLI, so should be able to keep up-to-date on it.
 
-## Usage
+## Providing Credentials
+
+Credentials can be provided in any of the aws-cli supported formats.
+
+### Using credentials file
+
+If you need to create the credentials file, you can use the aws-cli configure command by using the following command:
 
 ```
-docker run --rm -e AWS_ACCESS_KEY_ID=my-key-id -e AWS_SECRET_ACCESS_KEY=my-secret-access-key -v $(pwd):/aws mikesir87/aws-cli aws ecs register-task-definition --cli-input-json file://aws/task-definition.json
+docker run --rm -v $HOME/.aws:/root/.aws mikesir87/aws-cli aws configure
 ```
 
-The sample above uses environment variables to set the access and secret keys and invokes the ECS service to register a task definition.
+From that point on, simply mount the directory containing your config.
+
+```
+docker run --rm -v $HOME/.aws:/root/.aws mikesir87/aws-cli aws s3 ls
+```
+
+### Using environment variables
+
+This is supported, although NOT encouraged, as the environment variables can end up in command-line history, available for container inspection, etc.
+
+- `AWS_ACCESS_KEY_ID` - specify the access key ID
+- `AWS_SECRET_ACCESS_KEY` - the secret access key
+
+```
+docker run --rm -e AWS_ACCESS_KEY_ID=my-key-id -e AWS_SECRET_ACCESS_KEY=my-secret-access-key -v $(pwd):/aws mikesir87/aws-cli aws s3 ls 
+```
 
 
