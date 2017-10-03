@@ -6,7 +6,7 @@
 
 ## Supported tags and Dockerfiles
 
-[1.11.163/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.11.163/Dockerfile) |
+[1.11.164/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.11.164/Dockerfile) |
 [1.10.65](https://github.com/mikesir87/aws-cli-docker/blob/1.10.65/Dockerfile) |
 
 This image provides the AWS CLI and a few other tools, including jq.
