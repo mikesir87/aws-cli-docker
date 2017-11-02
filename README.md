@@ -6,8 +6,8 @@
 
 ## Supported tags and Dockerfiles
 
-[1.11.179/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.11.179/Dockerfile) |
-[1.10.65](https://github.com/mikesir87/aws-cli-docker/blob/1.10.65/Dockerfile) |
+- [1.11.179/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.11.179/Dockerfile) 
+- [1.10.65](https://github.com/mikesir87/aws-cli-docker/blob/1.10.65/Dockerfile)
 
 This image provides the AWS CLI and a few other tools, including jq.
 
@@ -42,4 +42,11 @@ This is supported, although NOT encouraged, as the environment variables can end
 docker run --rm -e AWS_ACCESS_KEY_ID=my-key-id -e AWS_SECRET_ACCESS_KEY=my-secret-access-key -v $(pwd):/aws mikesir87/aws-cli aws s3 ls 
 ```
 
+## Using the container as a CLI command
+
+You can setup an alias for `aws` to simply start a container, hiding the fact that it's not actually installed on the machine. Then, updating the version simply becomes a `docker pull mikesir87/aws-cli`.
+
+```
+alias aws='docker run --rm -tiv $HOME/.aws:/root/.aws -v $(pwd):/aws mikesir87/aws-cli aws'
+```
 
