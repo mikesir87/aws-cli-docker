@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV CLI_VERSION=1.14.16
+ENV CLI_VERSION=1.14.18
 
 RUN mkdir -p /aws && \
     apk -Uuv add groff jq less python py-pip && \
