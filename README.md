@@ -6,7 +6,7 @@
 
 ## Supported tags and Dockerfiles
 
-- [1.15.36/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.15.36/Dockerfile)
+- [1.15.38/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.15.38/Dockerfile)
 - [1.14.69/latest](https://github.com/mikesir87/aws-cli-docker/blob/1.14.69/Dockerfile)
 - [1.12.1](https://github.com/mikesir87/aws-cli-docker/blob/1.12.1/Dockerfile)
 - [1.11.190](https://github.com/mikesir87/aws-cli-docker/blob/1.11.190/Dockerfile) 
