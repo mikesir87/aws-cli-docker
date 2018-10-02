@@ -26,7 +26,7 @@ Credentials can be provided in any of the aws-cli supported formats.
 If you need to create the credentials file, you can use the aws-cli configure command by using the following command:
 
 ```
-docker run --rm -v $HOME/.aws:/root/.aws mikesir87/aws-cli aws configure
+docker run --rm -tiv $HOME/.aws:/root/.aws mikesir87/aws-cli aws configure
 ```
 
 From that point on, simply mount the directory containing your config.
