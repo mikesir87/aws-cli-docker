@@ -1,12 +1,10 @@
-FROM alpine:latest
+FROM python:alpine
 
-ENV CLI_VERSION=1.16.54
+ARG CLI_VERSION=1.16.54
 
-RUN mkdir -p /aws && \
-    apk -Uuv add groff jq less python py-pip && \
-    pip install awscli==$CLI_VERSION && \
-    apk --purge -v del py-pip && \
-    rm /var/cache/apk/*
+RUN apk -uv add --no-cache groff jq less && \
+    pip install --no-cache-dir awscli==$CLI_VERSION
 
 WORKDIR /aws
 
+CMD sh
