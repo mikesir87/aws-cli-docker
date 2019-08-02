@@ -1,6 +1,6 @@
 FROM python:alpine
 
-ARG CLI_VERSION=1.16.209
+ARG CLI_VERSION=1.16.210
 
 RUN apk -uv add --no-cache groff jq less && \
     pip install --no-cache-dir awscli==$CLI_VERSION
