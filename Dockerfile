@@ -1,4 +1,4 @@
-FROM debian AS base
+FROM debian:stable-slim
 WORKDIR /work
 RUN apt update && \
     apt install -y zip gnupg curl jq less && \
