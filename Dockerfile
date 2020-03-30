@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 WORKDIR /work
 RUN apt update && \
-    apt install -y zip gnupg curl jq less && \
+    apt install -y zip gnupg curl jq less wget && \
     echo "-----BEGIN PGP PUBLIC KEY BLOCK----- \n\
 \n\
 mQINBF2Cr7UBEADJZHcgusOJl7ENSyumXh85z0TRV0xJorM2B/JL0kHOyigQluUG\n\
